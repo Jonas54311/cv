@@ -1,18 +1,31 @@
+:root {
+  --layout-width: 44rem;
+}
+
 .with-sidebar{
     display: flex;
     flex-wrap: wrap;
 }
 
-
+.border{
+    border: 4px solid conic-gradient(red, yellow);
+}
     
 
 .sidebar{
     flex-basis: 16rem; /*sidebar startbredd */
     flex-grow: 1;
+    text-align: right;
 }
 
 .not-sidebar{
     flex-basis: 0;
     flex-grow: 999;
     min-inline-size: 50%;
+}
+
+.centered-layout {
+  max-width: min(var(--layout-width), 100vw);
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
