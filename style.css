@@ -7,13 +7,17 @@
     flex-wrap: wrap;
 }
 
-.border{
-    border: 4px solid conic-gradient(red, yellow);
+.border {
+    width: 400px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, red, white, white, yellow);
+    border-image-slice: 1;
+    padding: 5px;
 }
     
 
 .sidebar{
-    flex-basis: 16rem; /*sidebar startbredd */
+    flex-basis: 16rem; 
     flex-grow: 1;
     text-align: right;
 }
@@ -25,7 +29,7 @@
 }
 
 .centered-layout {
-  max-width: min(var(--layout-width), 100vw);
+  width: 560px;
   margin-inline: auto;
   padding-inline: 1rem;
 }
