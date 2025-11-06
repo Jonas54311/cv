@@ -10,22 +10,29 @@
 .border {
     width: 400px;
     border: 3px solid transparent;
-    border-image: linear-gradient(to right, red, white, white, yellow);
+    border-image: linear-gradient(to right, red, whitesmoke, whitesmoke, yellow);
     border-image-slice: 1;
     padding: 0px;
+    background-color: whitesmoke;
+    transition: all ease-in-out 1s;
 }
-    
+
+.border:hover{
+  border-image: linear-gradient(to right, rgb(255, 255, 0), whitesmoke, whitesmoke, whitesmoke, red);
+  border-image-slice: 1;
+}
 
 .sidebar{
-    flex-basis: 16rem; 
-    flex-grow: 1;
-    text-align: right;
+  flex-basis: 16rem; 
+  flex-grow: 1;
+  text-align: right;
+  padding: 0px;
 }
 
 .not-sidebar{
-    flex-basis: 0;
-    flex-grow: 999;
-    min-inline-size: 50%;
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
 }
 
 .centered-layout {
@@ -48,12 +55,12 @@ h3{
 
 h4{
   padding-bottom: 0px;
+  font-weight: normal;
 }
 
 .momo-signature-regular {
   h1{
     font-family: "Momo Signature", cursive;
-    font-weight: 400;
     font-style: normal;
   }
   h2{
